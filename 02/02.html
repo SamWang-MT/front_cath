@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+      var item = "item_value";
+
+      window.onload = function(){
+
+        let {a,b,c} = {'b':22,'a':'aa1','c':89};
+        console.log(a,b,c);
+        let aBTn = document.getElementsByTagName('input');
+
+        // console.log(aBTn);
+        for (let i = 0;i < aBTn.length; i++)   {
+          aBTn[i].onclick = function(){
+
+            alert(i+1);
+
+          }
+
+        } 
+
+      }
+
+    </script>
+  </head>
+  <body>
+
+<INput type="button" value="1"></INput>
+<INput type="button" value="2"></INput>
+<INput type="button" value="3"></INput>
+
+  </body>
+</html>
